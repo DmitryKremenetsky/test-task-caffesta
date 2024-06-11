@@ -1,35 +1,27 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.666rem;
-  color: #797575;
 }
 
 button {
   padding: 0.65rem 2rem;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #fff;
   background-color: #ff6624;
-  border-radius: 0.75rem;
+  border-radius: 1.25rem;
   border: none;
   cursor: pointer;
 }
 
 .custom-line {
-  max-width: 100%;
+  max-width: 31.25rem;
   margin: 2.5rem auto;
   border: none;
-  border-top: 0.125rem solid #ddd;
+  border-top: 0.25rem solid #ddd;
 }
 
 header {
@@ -101,7 +93,6 @@ header nav ul .socials a {
   background-image: url(/img/food-main.png);
   background-size: cover;
   background-position: center;
-  padding: 5%;
 }
 .hero .hero-content {
   max-width: 40rem;
@@ -109,15 +100,15 @@ header nav ul .socials a {
 }
 .hero .hero-content h1 {
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 4rem;
+  line-height: 5.2rem;
   color: #ab0505;
 }
 .hero .hero-content p {
   margin-top: 1.625rem;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #000000;
 }
 .hero .hero-content button {
@@ -127,13 +118,12 @@ header nav ul .socials a {
 .taste {
   margin-top: 4.813rem;
   text-align: center;
-  padding: 0 5%;
 }
 .taste h2 {
   margin-bottom: 4.813rem;
   font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 4rem;
+  line-height: 5.2rem;
 }
 .taste .taste-items {
   display: flex;
@@ -153,15 +143,15 @@ header nav ul .socials a {
 }
 .taste h3 {
   font-weight: 500;
-  font-size: 1.875rem;
-  line-height: 2.45rem;
+  font-size: 3rem;
+  line-height: 3.9rem;
   color: #000000;
 }
 .taste p {
-  width: 100%;
+  width: 25rem;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.6rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #000000;
 }
 .taste button {
@@ -171,13 +161,12 @@ header nav ul .socials a {
 .recipes {
   margin-top: 1.07rem;
   text-align: center;
-  padding: 0 5%;
 }
 .recipes h2 {
   margin-bottom: 5.188rem;
   font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 4rem;
+  line-height: 5.2rem;
 }
 .recipes .recipes-gallery {
   display: flex;
@@ -195,12 +184,11 @@ header nav ul .socials a {
 .blog {
   margin: 2.125rem 0 0;
   text-align: center;
-  padding: 0 5%;
 }
 .blog h2 {
   font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 4rem;
+  line-height: 5.2rem;
 }
 .blog .navigation {
   margin-bottom: 0.938rem;
@@ -241,18 +229,18 @@ header nav ul .socials a {
   text-align: left;
 }
 .blog .blog-slider .blog-item .blog-content div {
-  max-width: 100%;
+  max-width: 64rem;
   margin-left: 1.25rem;
 }
 .blog .blog-slider .blog-item .blog-content h3 {
   font-weight: 500;
-  font-size: 1.875rem;
-  line-height: 2.45rem;
+  font-size: 3rem;
+  line-height: 3.9rem;
 }
 .blog .blog-slider .blog-item .blog-content p {
   font-weight: 400;
-  font-size: 1.406rem;
-  line-height: 1.812rem;
+  font-size: 2.25rem;
+  line-height: 2.9rem;
 }
 .blog .blog-slider .blog-items-container {
   display: flex;
@@ -288,6 +276,7 @@ footer .logo-socials {
 }
 footer .logo-socials p {
   max-width: 19rem;
+  margin-left: 4rem;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 1.25rem;
@@ -296,6 +285,7 @@ footer .logo-socials p {
 }
 footer .logo-socials .social-icons {
   margin-top: 2.25rem;
+  margin-left: 4rem;
   text-align: left;
 }
 footer .logo-socials .social-icons h3 {
