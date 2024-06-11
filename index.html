@@ -73,7 +73,6 @@
       </section>
       <section class="taste">
         <h2>Taste of food</h2>
-        <!-- подумать как грамотно сделать ховер-->
         <div class="taste-items">
           <div class="item">
             <img src="./img/salad-img.png" alt="salad-img" />
@@ -119,7 +118,6 @@
           </div>
           <button>Read more</button>
         </div>
-        <!-- подумать как грамотно сделать ховер-->
         <hr class="custom-line" />
       </section>
       <section class="recipes">
@@ -153,9 +151,17 @@
         <button>Read more</button>
         <hr class="custom-line" />
       </section>
-      <section class="blog">
+      <!-- <section class="blog">
         <h2>Blog</h2>
+        <div class="navigation">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
         <div class="blog-slider">
+          <div class="arrows">
+            <img src="./img/icons/left-arrow.svg" alt="left-arrow" />
+          </div>
           <div class="blog-item">
             <div class="blog-content">
               <img src="./img/user-img.png" alt="user-img" />
@@ -168,6 +174,77 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="arrows">
+            <img src="./img/icons/right-arrow.svg" alt="right-arrow" />
+          </div>
+        </div>
+        <button>Read more</button>
+      </section> -->
+      <section class="blog">
+        <h2>Blog</h2>
+        <div class="navigation">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+        <div class="blog-slider">
+          <div class="arrows left-arrow">
+            <img
+              src="./img/icons/left-arrow.svg"
+              class="color-arrow"
+              alt="left-arrow"
+            />
+          </div>
+          <div class="blog-items-container">
+            <div class="blog-item active" data-index="0">
+              <div class="blog-content">
+                <img src="./img/user-img.png" alt="user-img" />
+                <div>
+                  <h3>New healthy recipe</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pudebit am, illius tabulae, quam Cleathes sane commode
+                    verbis depingere solebat. Eadem nunc
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item" data-index="1">
+              <div class="blog-content">
+                <img src="./img/user-img.png" alt="user-img" />
+                <div>
+                  <h3>New healthy recipe</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                    tenetur assumenda adipisci omnis accusamus minus doloremque
+                    cumque commodi, maiores at quisquam enim molestiae ratione
+                    asperiores, sed repellendus fugiat soluta dolor.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item" data-index="2">
+              <div class="blog-content">
+                <img src="./img/user-img.png" alt="user-img" />
+                <div>
+                  <h3>New healthy recipe</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum reprehenderit at accusamus, error sunt iusto
+                    blanditiis assumenda earum maiores natus, maxime hic fuga
+                    cum sequi. Repellendus ad ducimus autem accusamus?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrows right-arrow">
+            <img
+              src="./img/icons/right-arrow.svg"
+              class="color-arrow"
+              alt="right-arrow"
+            />
           </div>
         </div>
         <button>Read more</button>
@@ -222,7 +299,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

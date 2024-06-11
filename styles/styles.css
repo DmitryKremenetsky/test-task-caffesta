@@ -128,13 +128,13 @@ header nav ul .socials a {
 .taste .item {
   display: flex;
   text-align: start;
-  margin-bottom: 3.125vw;
+  margin: 30px;
+  padding: 10px;
 }
 .taste .item img {
   margin-right: 1.042vw;
 }
 .taste .item:hover {
-  transform: scale(1.05);
   background-color: #ff7f48;
 }
 .taste h3 {
@@ -144,7 +144,7 @@ header nav ul .socials a {
   color: #000000;
 }
 .taste p {
-  width: 22.448vw;
+  width: 20vw;
   font-weight: 400;
   font-size: 32px;
   line-height: 41.66px;
@@ -182,20 +182,42 @@ header nav ul .socials a {
   text-align: center;
 }
 .blog h2 {
-  margin-bottom: 5.208vw;
   font-weight: 500;
   font-size: 64px;
   line-height: 83.33px;
+}
+.blog .navigation {
+  margin-bottom: 10px;
+}
+.blog .navigation .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.blog .navigation .dot.active {
+  background-color: orange;
 }
 .blog .blog-slider {
   display: flex;
   justify-content: center;
 }
+.blog .blog-slider .arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .blog-slider .color-arrow:hover {
+  filter: invert(38%) sepia(84%) saturate(1666%) hue-rotate(343deg) brightness(103%) contrast(101%);
+}
 .blog .blog-slider .blog-item {
-  background-color: #f5f5f5;
+  display: none;
+  flex: 1 0 100%;
   margin: 10px;
   padding: 20px;
-  border-radius: 10px;
 }
 .blog .blog-slider .blog-item .blog-content {
   display: flex;
@@ -215,13 +237,20 @@ header nav ul .socials a {
   font-size: 36px;
   line-height: 46.87px;
 }
+.blog .blog-slider .blog-items-container {
+  display: flex;
+  overflow: hidden;
+}
+.blog .blog-slider .blog-item.active {
+  display: block;
+}
 .blog button {
   margin: 9.063vw 0 9.896vw;
 }
 
 footer {
   background-color: #ff6624;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 24px 203px 138px 150px;
 }
 footer .footer-container {
@@ -267,7 +296,7 @@ footer .footer-links ul li {
   margin: 14px 0;
 }
 footer .footer-links ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   font-size: 36px;
   line-height: 46.87px;
@@ -287,10 +316,10 @@ footer .footer-newsletter form {
 footer .footer-newsletter form input {
   width: 90%;
   padding: 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   background-color: #ff6624;
   margin-bottom: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 footer .footer-newsletter form button {
   margin: 40px 0 60px;
@@ -298,7 +327,7 @@ footer .footer-newsletter form button {
   font-weight: 700;
   font-size: 36px;
   line-height: 46.87px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #ff6624;
   border-radius: 10px;
 }
