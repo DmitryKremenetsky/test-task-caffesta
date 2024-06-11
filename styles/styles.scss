@@ -5,49 +5,58 @@
 $primary-color: #ff6624;
 $secondary-color: #000000;
 $highlight-color: #ffa500;
+$base-font-size: 16px;
+
+html {
+  font-size: $base-font-size; 
+}
 
 body {
   font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.666rem; 
+  color: #797575;
 }
 
 button {
   padding: 0.65rem 2rem;
   font-weight: 500;
-  font-size: 2rem; 
-  line-height: 2.6rem; 
+  font-size: 1.25rem; 
+  line-height: 1.6rem;
   color: #fff;
   background-color: $primary-color;
-  border-radius: 1.25rem; 
+  border-radius: 0.75rem; // 12px
   border: none;
   cursor: pointer;
 }
 
 .custom-line {
-  max-width: 31.25rem; 
+  max-width: 100%;
   margin: 2.5rem auto;
   border: none;
-  border-top: 0.25rem solid #ddd; 
+  border-top: 0.125rem solid #ddd; 
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 7.188rem 1.875rem 6.438rem;
+  padding: 0 5% 1.875rem;
 
   nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.375rem 0 0 20.875rem;
+    margin: 2.375rem 0 0;
     padding: 0;
     list-style: none;
 
     li {
-      margin-right: 3.75rem;
+      margin-right: 2.5rem;
       font-weight: 400;
-      font-size: 2rem;
-      line-height: 2.67rem;
+      font-size: 1.25rem; 
+      line-height: 1.667rem; 
     }
 
     li:first-child {
@@ -75,13 +84,13 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 1.95rem 0 0;
+      margin: 0 1.25rem 0 0;
       font-weight: 500;
-      font-size: 2rem; 
-      line-height: 2.6rem; 
+      font-size: 1.25rem; 
+      line-height: 1.6rem;
       color: #fff;
       background-color: $primary-color;
-      border-radius: 1.25rem; 
+      border-radius: 0.75rem; 
       border: none;
       cursor: pointer;
     }
@@ -95,7 +104,7 @@ header {
     }
 
     .socials a {
-      margin: 0 1rem 0;
+      margin: 0 0.625rem 0;
     }
   }
 }
@@ -108,6 +117,7 @@ header {
   background-image: url(/img/food-main.png);
   background-size: cover;
   background-position: center;
+  padding: 5%;
 
   .hero-content {
     max-width: 40rem; 
@@ -115,16 +125,16 @@ header {
 
     h1 {
       font-weight: 700;
-      font-size: 4rem; 
-      line-height: 5.2rem; 
+      font-size: 2.5rem; 
+      line-height: 3.25rem; 
       color: #ab0505;
     }
 
     p {
       margin-top: 1.625rem;
       font-weight: 400;
-      font-size: 2rem; 
-      line-height: 2.6rem; 
+      font-size: 1.25rem; 
+      line-height: 1.6rem; 
       color: $secondary-color;
     }
 
@@ -137,12 +147,13 @@ header {
 .taste {
   margin-top: 4.813rem;
   text-align: center;
+  padding: 0 5%;
 
   h2 {
     margin-bottom: 4.813rem;
     font-weight: 500;
-    font-size: 4rem; 
-    line-height: 5.2rem;
+    font-size: 2.5rem; 
+    line-height: 3.25rem; 
   }
 
   .taste-items {
@@ -167,16 +178,16 @@ header {
 
   h3 {
     font-weight: 500;
-    font-size: 3rem;
-    line-height: 3.9rem; 
+    font-size: 1.875rem; 
+    line-height: 2.45rem; 
     color: $secondary-color;
   }
 
   p {
-    width: 25rem;
+    width: 100%;
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.6rem; 
+    font-size: 1.25rem; 
+    line-height: 1.6rem; 
     color: $secondary-color;
   }
 
@@ -188,12 +199,13 @@ header {
 .recipes {
   margin-top: 1.07rem;
   text-align: center;
+  padding: 0 5%;
 
   h2 {
     margin-bottom: 5.188rem;
     font-weight: 500;
-    font-size: 4rem; 
-    line-height: 5.2rem;
+    font-size: 2.5rem; 
+    line-height: 3.25rem; 
   }
 
   .recipes-gallery {
@@ -215,11 +227,12 @@ header {
 .blog {
   margin: 2.125rem 0 0;
   text-align: center;
+  padding: 0 5%;
 
   h2 {
     font-weight: 500;
-    font-size: 4rem; 
-    line-height: 5.2rem; 
+    font-size: 2.5rem; 
+    line-height: 3.25rem; 
   }
 
   .navigation {
@@ -267,20 +280,20 @@ header {
         text-align: left;
 
         div {
-          max-width: 64rem;
+          max-width: 100%;
           margin-left: 1.25rem; 
         }
 
         h3 {
           font-weight: 500;
-          font-size: 3rem; 
-          line-height: 3.9rem; 
+          font-size: 1.875rem; 
+          line-height: 2.45rem; 
         }
 
         p {
           font-weight: 400;
-          font-size: 2.25rem; 
-          line-height: 2.9rem; 
+          font-size: 1.406rem; 
+          line-height: 1.812rem; 
         }
       }
     }
@@ -303,7 +316,7 @@ header {
 footer {
   background-color: $primary-color;
   color: #ffffff;
-  padding: 1.5rem 12.687rem 8.625rem 9.375rem;
+  padding: 1.5rem 5% 8.625rem;
 
   .footer-container {
     display: flex;
@@ -320,27 +333,28 @@ footer {
   }
 
   .logo-socials {
-    max-width: 32.75rem;
+    max-width: 100%;
     text-align: center;
-    margin-left: 4rem;
+    margin-left: 0;
 
     p {
+      max-width: 19rem;
       font-family: "Playfair Display", serif;
       font-weight: 400;
-      font-size: 2.25rem; 
-      line-height: 3rem;
+      font-size: 1.25rem; 
+      line-height: 1.666rem; 
       text-align: left;
     }
 
     .social-icons {
-      margin-top: 3.437rem;
+      margin-top: 2.25rem; 
       text-align: left;
 
       h3 {
-        margin-bottom: 1.875rem;
+        margin-bottom: 1.875rem; 
         font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3.255rem;
+        font-size: 1.875rem; 
+        line-height: 2.45rem; 
       }
 
       a {
@@ -360,8 +374,8 @@ footer {
         a {
           color: #ffffff;
           font-weight: 700;
-          font-size: 2.25rem;
-          line-height: 2.929rem;
+          font-size: 1.25rem; 
+          line-height: 1.666rem; 
           text-decoration: none;
         }
       }
@@ -374,10 +388,10 @@ footer {
 
   .footer-newsletter {
     h3 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem; 
       font-weight: 700;
-      font-size: 2.5rem;
-      line-height: 3.255rem;
+      font-size: 1.875rem; 
+      line-height: 2.45rem; 
     }
 
     form {
@@ -388,19 +402,19 @@ footer {
       input {
         width: 90%;
         padding: 0.625rem; 
-        border: 0.125rem solid #ffffff;
+        border: 0.125rem solid #ffffff; 
         background-color: $primary-color;
         color: #ffffff;
       }
 
       button {
-        margin: 2.5rem 0 3.75rem;
-        padding: 0.375rem 1.5rem; 
+        margin: 2.5rem 0 3.75rem; 
+        padding: 0.375rem 1.5rem;
         font-weight: 700;
-        font-size: 2.25rem; 
+        font-size: 1.25rem; 
         background-color: #ffffff;
         color: $primary-color;
-        border-radius: 0.625rem;
+        border-radius: 0.625rem; 
       }
     }
 
@@ -409,5 +423,23 @@ footer {
         margin: 0 0.625rem; 
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 1rem; 
+  }
+
+  header, footer {
+    padding: 0 2.5%;
+  }
+
+  .hero-content {
+    padding: 10rem 2.5rem 5rem;
+  }
+
+  .taste, .recipes, .blog {
+    padding: 0 2.5%;
   }
 }
