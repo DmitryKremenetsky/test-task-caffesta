@@ -261,7 +261,6 @@ header {
       display: none;
       flex: 1 0 100%;
       margin: 0.625rem;
-      padding: 1.25rem; 
 
       .blog-content {
         display: flex;
@@ -431,6 +430,11 @@ footer {
 
   .taste, .recipes, .blog {
     padding: 0 2.5%;
+  }
+
+  .blog-slider {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
